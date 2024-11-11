@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartForce 메인 페이지</title>
+</head>
+<body>
+    <h1>SmartForce 경매 플랫폼</h1>
+    <p>원하는 기능을 선택하세요:</p>
+
+    <!-- 회원가입 및 로그인 -->
+    <a href="{{ url_for('register') }}"><button>회원가입</button></a>
+    <a href="{{ url_for('login') }}"><button>로그인</button></a>
+
+    <!-- 주요 기능 페이지 이동 -->
+    <a href="{{ url_for('dashboard') }}"><button>사용자 대시보드</button></a>
+    <a href="{{ url_for('admin_dashboard') }}"><button>관리자 대시보드</button></a>
+    <a href="{{ url_for('apply_coupon') }}"><button>쿠폰 적용</button></a>
+    <a href="{{ url_for('some_auction_route') }}"><button>경매 페이지</button></a>
+    <a href="{{ url_for('rentals') }}"><button>대여 페이지</button></a>
+    
+    <!-- 기타 서비스 안내 및 정보 -->
+    <a href="{{ url_for('service_info') }}"><button>서비스 안내</button></a>
+</body>
+</html>

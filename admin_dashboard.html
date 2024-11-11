@@ -1,0 +1,15 @@
+<h2>관리 대시보드</h2>
+<table>
+    <tr>
+        <th>이름</th>
+        <th>이메일</th>
+        <th>전화번호</th>
+    </tr>
+    {% for user in users %}
+    <tr>
+        <td>{{ user.username }}</td>
+        <td>{{ user.email }}</td>
+        <td>{{ user.phone }}</td>
+    </tr>
+    {% endfor %}
+</table>

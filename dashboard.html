@@ -1,0 +1,9 @@
+<h2>대시보드</h2>
+<p>환영합니다!</p>
+<p>현재 포인트: {{ user.points }} 포인트</p>
+
+<form method="POST" action="{{ url_for('apply_coupon') }}">
+    <label>쿠폰 코드:</label>
+    <input type="text" name="coupon_code" required>
+    <button type="submit">쿠폰 적용</button>
+</form>
